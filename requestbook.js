@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function fetchAndPopulatetitle() {
-    fetch("https://ab96-54-252-216-136.ngrok-free.app/api/user/books")
+    fetch("https://c753-54-252-216-136.ngrok-free.app/api/user/books")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch book titles");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: title,
     };
 
-    fetch("https://ab96-54-252-216-136.ngrok-free.app/api/user/submit", {
+    fetch("https://c753-54-252-216-136.ngrok-free.app/api/user/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
