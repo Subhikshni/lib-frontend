@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function fetchAndPopulatebookdata(page) {
     const startIndex = (page - 1) * booksPerPage;
     fetch(
-      `http://localhost:3001/api/admin/centers?page=${page}&limit=${booksPerPage}`,
+      `https://ab96-54-252-216-136.ngrok-free.app/api/admin/centers?page=${page}&limit=${booksPerPage}`,
       {
         method: "GET",
         headers: {
@@ -54,9 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function deleteBook(bookId) {
-    fetch(`http://localhost:3001/api/admin/centers/${bookId}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://ab96-54-252-216-136.ngrok-free.app/api/admin/centers/${bookId}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to delete book");
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  fetch("http://localhost:3001/api/admin/centers")
+  fetch("https://ab96-54-252-216-136.ngrok-free.app/api/admin/centers")
     .then((response) => response.json())
     .then((data) => {
       const totalPages = Math.ceil(data.length / booksPerPage);
@@ -111,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       publish_date: publish_date,
       num_available: num_available,
     };
-    fetch("http://localhost:3001/api/admin/submit", {
+    fetch("https://ab96-54-252-216-136.ngrok-free.app/api/admin/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
