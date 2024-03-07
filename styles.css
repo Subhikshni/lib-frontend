@@ -1,0 +1,174 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+table,
+tr,
+th,
+td,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4825f; /* Solid orange color */
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#choices {
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #efaf9b; /* Tangy orange color for buttons */
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: #ffffff; /* Darker shade of orange on hover */
+}
+
+/* Styles for admin-panel.html */
+#centersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#centersTable th,
+#centersTable td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#addCenterForm {
+  margin-bottom: 20px;
+}
+
+#addCenterForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #351b13; /* Tangy orange color for labels */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#addCenterForm input[type="text"],
+#addCenterForm input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#addCenterForm button[type="submit"] {
+  background-color: #efaf9b; /* Tangy orange color for submit button */
+}
+
+/* Styles for user.html */
+#bookTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#bookTable th,
+#bookTable td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#searchInput {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#sortBySelect {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#bookList tr:hover {
+  background-color: #f2f2f2;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height of the container to full viewport height */
+  text-align: center; /* Center align text */
+}
+
+#loginForm {
+  width: 300px; /* Set a fixed width for the form */
+}
+
+#loginForm button {
+  display: inline-block; /* Make the button inline-block */
+}
+
+#bookform {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height of the container to full viewport height */
+  text-align: center; /* Center align text */
+}
+
+#addCenterForm {
+  width: 300px; /* Set a fixed width for the form */
+}
+
+#addCenterForm button {
+  display: inline-block; /* Make the button inline-block */
+}
+
+#optionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+#optionsContainer div {
+  display: inline-block;
+}

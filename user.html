@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <!-- Link your stylesheet here -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Library Books</h1>
+
+    <div>
+      <label for="searchInput">Search:</label>
+      <input type="text" id="searchInput" placeholder="Enter search term..." />
+      <select id="searchBySelect">
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="subject">Subject</option>
+        <option value="publish_date">Publish Date</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="sortBySelect">Sort by:</label>
+      <select id="sortBySelect">
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="subject">Subject</option>
+        <option value="publish_date">Publish Date</option>
+        <option value="num_available">Number Available</option>
+      </select>
+      <button id="requestBookButton">Request Book</button>
+      <!-- Added button -->
+    </div>
+
+    <table id="bookTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Subject</th>
+          <th>Publish Date</th>
+          <th>Available</th>
+        </tr>
+      </thead>
+      <tbody id="bookList"></tbody>
+    </table>
+
+    <script src="user.js"></script>
+  </body>
+</html>

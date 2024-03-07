@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <link rel="stylesheet" href="requestbook.css" />
+  </head>
+  <body>
+    <div id="userPage">
+      <h2>Request Book</h2>
+    </div>
+
+    <form id="requestingbook">
+      <label for="Name">Name</label>
+      <input type="text" id="Name" name="Name" required /><br />
+      <label for="libraryid">Library ID</label>
+      <input type="number" id="libraryid" name="libraryid" required /><br />
+      <label for="from_date">From Date</label>
+      <input type="date" id="from_date" name="from_date" required /><br />
+      <label for="to_date">To date</label>
+      <input type="date" id="to_date" name="to_date" required /><br />
+      <label for="Email">Email Address:</label>
+      <input type="email" id="Email" name="Email" required /><br />
+      <label for="contactNumber">Contact Number:</label>
+      <input
+        type="number"
+        id="contactNumber"
+        name="contactNumber"
+        required
+      /><br />
+      <label for="title">Book Name</label>
+      <select id="title" name="title" required>
+        <!-- Center names will be dynamically populated here --></select
+      ><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="requestbook.js"></script>
+  </body>
+</html>
